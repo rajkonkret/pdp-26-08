@@ -41,3 +41,28 @@ print(encode_s)  # b'Witaj \xc5\x9awiecie', b - typ bajtowy
 # \xc5 - 197 dziesiętnie
 print(type(encode_s))  # <class 'bytes'>
 print(encode_s.decode('utf-8'))  # Witaj Świecie
+
+imie = "Radek"
+# f - fstring - string sformatowany
+tekst_format = f"Mam na imię {imie} i lubię pythona."
+print(tekst_format)  # Mam na imię Radek i lubię pythona.
+tekst_format_1 = f"\tMam na imię {imie}\n i lubię pythona.\b"
+print(tekst_format_1)
+# "	Mam na imię Radek
+#  i lubię pythona"
+# \t - tabulator
+# \n - nowa linia
+# \b - backspace
+
+starszy = "Witaj %s!"  # %s - string
+print(starszy % imie)  # Witaj Radek! - wstawiło wartość zmiennej imie w miejsce %s
+
+print("Witaj {}!".format(imie))  # Witaj Radek!
+
+print("Witaj", imie)  # Witaj Radek
+
+# tekst wielolinijkowy
+print("""Tekst
+    wielolinijkowy""")
+# "Tekst
+#     wielolinijkowy"
