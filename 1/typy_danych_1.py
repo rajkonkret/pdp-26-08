@@ -42,3 +42,50 @@ print(f"""
     {temp}""")
 # '47
 #     36.6'
+
+# typ logiczny
+# prawda, fałsz
+# True, False
+# 1 - prawda, 0 - fałsz
+czy_znasz_pythona = True
+print(czy_znasz_pythona)  # True
+
+print(int(czy_znasz_pythona))  # 1, int() - rzutowanie na liczbę
+print(int(False))  # 0
+
+print(bool(1))  # rzutowanie na typ logiczny, True
+print(bool(100))  # True
+print(bool(-10))  # True
+print(bool(-6.8))  # True
+print(bool("radek"))  # True
+
+print(bool(0))  # False
+print(bool(""))  # False
+print(bool(None))  # False, None - nic, stan nieokreslony, odpowiednik null
+
+# działania logiczne
+# and -> i
+print(True and True)  # True
+print(True and False)  # False
+print(False and False)  # False
+print(False and True)  # False
+
+# or - lub
+print(True or True)  # True
+print(True or False)  # True
+print(False or False)  # False
+print(False or True)  # True
+
+# not - negacja
+print(not True)  # False
+print(not False)  # True
+
+a = 8
+b = 6
+# wynik porównań jest typu bool (typ logiczny)
+print(f"Porównanie {a} > {b} = {a > b}")  # Porównanie 8 > 6 = True
+print(f"Porównanie {a} < {b} = {a < b}")  # Porównanie 8 < 6 = False
+print(f"Porównanie {a <= b=} ")  # Porównanie a <= b=False
+print(f"Porównanie {a >= b=} ")  # Porównanie a >= b=True
+print(f"Porównanie {a} == {b} = {a == b}")  # == - porównanie          # Porównanie 8 == 6 = False
+print(f"Porównanie {a} != {b} = {a != b}")  # != - rózne          # Porównanie 8 != 6 = True
