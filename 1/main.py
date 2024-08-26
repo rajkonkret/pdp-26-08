@@ -14,3 +14,8 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# dwa razy shift - podręczna wyszukiwarka
+# wheel
+# github
+# Hi, PyCharm
+# ctrl shift f10 - uruchomineie widocznego pliku
