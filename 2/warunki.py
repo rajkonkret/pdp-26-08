@@ -69,3 +69,54 @@ print(f"Rabat wyosi {rabacik}")
 rabat = 25 if suma_zam > 100 else 0
 print(f"Rabat wyosi {rabat}")  # Rabat wyosi 25
 
+# zasymulujemy system zbierania logów
+# zmienne będą przechowywaac dane, które przyszły z zewnętrznego systemu
+# email, console, inny
+# dla console wypiszemy: "Stało się coś strasznego"
+# dla email: "System email"
+# jesli system bedzie "email" to typ błedu nalezy przetłumaczyc komunikatem i wpisac do listy błedów
+# error, medium, inny
+alert_system = 'email'
+error = 'medium'
+lista_b = []
+
+if alert_system == 'console':
+    print("Stało się coś strasznego")
+elif alert_system == 'email':
+    print("System email")
+    if error == 'error':
+        lista_b.append("Bład krytyczny")
+    elif error == 'medium':
+        lista_b.append('Ostrzeżenie')
+    else:
+        lista_b.append("inny")
+else:
+    print("Inny system")
+
+print(lista_b)
+# System email
+# ['Ostrzeżenie']
+a = 10
+assert a > 5
+# assert a > 15  # AssertionError
+assert 'Ostrzeżenie' in lista_b
+# assert 'Krytyczny' in lista_b  # AssertionError
+
+# napisac test z.....
+# zadac pytanie
+# pobrac odpowiedź
+# sprawdzic odpowiedź
+# wypisac włsciwy komunikat
+punkty = 0
+odp = input("Podaj datę Chrztu Polski")
+if odp == '966':
+    print("Brawo")
+    punkty += 1  # punkty = punkty + 1
+else:
+    print("Błąd")
+print(punkty)
+# spam += 1    spam = spam + 1
+# spam -= 1    spam = spam - 1
+# spam *= 1    spam = spam * 1
+# spam /= 1    spam = spam / 1
+# spam %= 1    spam = spam % 1
