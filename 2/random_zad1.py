@@ -44,5 +44,5 @@ lista_kule = list(range(1, 50))
 # print(wyn)
 
 print(random.choices(lista_kule, k=6))  # losuje z powtórzeniami [27, 34, 6, 13, 38, 13]
-print(random.sample(lista_kule, k=6))
-print(random.sample(lista_kule, 6))
+print(random.sample(lista_kule, k=6))  # [48, 12, 40, 5, 20, 30]
+print(random.sample(lista_kule, 6))  # [13, 33, 47, 10, 45, 2]
