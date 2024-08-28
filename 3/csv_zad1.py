@@ -36,6 +36,8 @@ dict_list = [
 
 filename_dict_list = 'records3.csv'
 with open(filename_dict_list, "w", newline="") as f:
-    csvwriter = csv.DictWriter(f, fieldnames=fields)
+    csvwriter = csv.DictWriter(f, fieldnames=fields, delimiter=";")
     csvwriter.writeheader()
     csvwriter.writerows(dict_list)  # zapisanie listy słowników jako csv
+
+# delimiter=";" - znak podziału
