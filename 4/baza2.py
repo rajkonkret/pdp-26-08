@@ -56,3 +56,4 @@ finally:
 # # Połączenie zostało zamknięte
 # Baza danych została podłączona
 # Połączenie zostało zamknięte
+# sqlalchemy
