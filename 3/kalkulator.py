@@ -5,3 +5,6 @@
 # wyswwietlic wynik dziłlania
 # obsłużyc wyjątki
 # dodać opcję wyjscia z programu
+
+
+print(eval("10+15*8"))  # 130
