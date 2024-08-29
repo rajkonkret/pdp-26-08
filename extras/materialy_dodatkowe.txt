@@ -120,3 +120,8 @@ spam %= 1    spam = spam % 1
  pip freeze > requirements.txt
  pip list
  pip install -r .\requirements.txt
+
+ tworzenie plików exe
+  pip install pyinstaller
+pyinstaller.exe --onefile --noconsole .\okno1.py
+pyinstaller.exe --onefile --windowed .\okno1.py  - na linuksie
